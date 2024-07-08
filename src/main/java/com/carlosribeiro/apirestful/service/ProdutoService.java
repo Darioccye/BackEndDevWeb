@@ -85,8 +85,34 @@ public class ProdutoService {
         return produtoRepository.recuperarProdutosComCategoria();
     }
 
-    public Page<Produto> recuperarProdutosComPaginacao(String nome, Pageable pageable) {
-        return produtoRepository.recuperarProdutosComPaginacao(nome, pageable);
+    public Page<Produto> recuperarProdutosComPaginacao(String nome, Pageable pageable, int filtro) {
+        switch(filtro) {
+            case 0:
+                return produtoRepository.recuperarProdutosComPaginacaoId(nome, pageable);
+            case 1:
+                return produtoRepository.recuperarProdutosComPaginacaoCategoria(nome, pageable);
+            case 2:
+                return produtoRepository.recuperarProdutosComPaginacaoNome(nome, pageable);
+            case 3:
+                return produtoRepository.recuperarProdutosComPaginacaoDataDeCadastro(nome, pageable);
+            case 4:
+                return produtoRepository.recuperarProdutosComPaginacaoQuantidade(nome, pageable);
+            case 5:
+                return produtoRepository.recuperarProdutosComPaginacaoPreco(nome, pageable);
+            case 6:
+                return produtoRepository.recuperarProdutosComPaginacaoIdDecrescente(nome, pageable);
+            case 7:
+                return produtoRepository.recuperarProdutosComPaginacaoCategoriaDecrescente(nome, pageable);
+            case 8:
+                return produtoRepository.recuperarProdutosComPaginacaoNomeDecrescente(nome, pageable);
+            case 9:
+                return produtoRepository.recuperarProdutosComPaginacaoDataDeCadastroDecrescente(nome, pageable);
+            case 10:
+                return produtoRepository.recuperarProdutosComPaginacaoQuantidadeDecrescente(nome, pageable);
+            case 11:
+                return produtoRepository.recuperarProdutosComPaginacaoPrecoDecrescente(nome, pageable);
+        }
+        return produtoRepository.recuperarProdutosComPaginacaoId(nome, pageable);
     }
 
     public List<Produto> recuperarProdutosPorSlugDaCategoria(String slug) {
