@@ -19,8 +19,12 @@ public class Usuario {
 
     @NotEmpty(message = "A 'Conta' deve ser informada.")
     private String conta;
+
     @NotEmpty(message = "A 'Senha' deve ser informada.")
     private String senha;
+
+
+
 
     public Usuario(String conta, String senha) {
         this.conta = conta;

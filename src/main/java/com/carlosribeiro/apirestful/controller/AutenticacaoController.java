@@ -16,11 +16,11 @@ public class AutenticacaoController {
     private AutenticacaoService autenticacaoService;
 
     @PostMapping("login")  // http://localhost:8080/autenticacao/login
-    public TokenResponse login(@RequestBody Usuario usuario) {
+    public Long login(@RequestBody Usuario usuario) {
         Usuario usuarioLogado = autenticacaoService.login(usuario);
         if (usuarioLogado != null) {
             System.out.println("Sucesso");
-            return new TokenResponse("Sucesso");
+            return usuarioLogado.getId();
         } else {
             System.out.println("Falha");
             throw new LoginException("Ocorreu um erro de login.");
@@ -30,4 +30,15 @@ public class AutenticacaoController {
         // 403 Forbidden - autenticado, mas falta permissão para acessar o recurso.
         // 422 Unprocessable Entity - conta informada, mas não existe no bd.
     }
+
+//    @GetMapping("conta")
+//    public Long idConta(@RequestBody Usuario usuario){
+//        Usuario usuarioLogado = autenticacaoService.login(usuario);
+//        if (usuarioLogado != null) {
+//            return usuarioLogado.getId();
+//        } else {
+//            System.out.println("Falha");
+//            throw new LoginException("Ocorreu um erro de login.");
+//        }
+//    }
 }

@@ -6,14 +6,22 @@ import com.carlosribeiro.apirestful.model.Usuario;
 import com.carlosribeiro.apirestful.repository.CategoriaRepository;
 import com.carlosribeiro.apirestful.repository.ProdutoRepository;
 import com.carlosribeiro.apirestful.repository.UsuarioRepository;
+import com.carlosribeiro.apirestful.service.CarrinhoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
+
+@CrossOrigin
 @SpringBootApplication
 public class ApiResTfulV1Application implements CommandLineRunner {
 
@@ -26,18 +34,25 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 	@Autowired
 	private UsuarioRepository usuarioRepository;
 
+	@Autowired
+	private CarrinhoService carrinhoService;
+
 	public static void main(String[] args) {
 		SpringApplication.run(ApiResTfulV1Application.class, args);
 	}
 
+		HashMap<Long, HashMap<Long, Integer>> carrinho = new HashMap<>();
+
 	@Override
 	public void run(String... args) throws Exception {
 
-		Usuario usuario = new Usuario("admin", "12345");
+		Usuario usuario = new Usuario("a", "a");
 		usuarioRepository.save(usuario);
+		carrinho.put(usuario.getId(), new HashMap<>());
 
-		usuario = new Usuario("a", "a");
+		usuario = new Usuario("admin", "12345");
 		usuarioRepository.save(usuario);
+		carrinho.put(usuario.getId(), new HashMap<>());
 
 		Categoria fruta = new Categoria("Frutas", "frutas");
 		categoriaRepository.save(fruta);
@@ -406,6 +421,22 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 				legume);
 		produtoRepository.save(produto);
 
+		carrinho.get((long)1).put((long) 1, 10);
 
+		carrinho.get((long)2).put((long) 5, 10);
+
+		System.out.println(carrinho);
+
+		carrinhoService.adicionarProduto(carrinho, (long) 1, (long) 4);
+
+		System.out.println(carrinho);
+
+		System.out.println(carrinhoService.calcularTotal(carrinho, (long) 1));
+
+	}
+
+	@Bean
+	public HashMap<Long, HashMap<Long, Integer>> carrinho() {
+		return carrinho;
 	}
 }
