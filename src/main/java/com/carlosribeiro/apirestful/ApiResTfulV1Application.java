@@ -73,7 +73,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		categoriaRepository.save(acessorio);
 
 		Produto produto = new Produto(
-				"roupa-verde.jpg",
+				"roupaverde.jpg",
 				"Roupa Verde",
 				"Descrição",
 				"M",
@@ -85,7 +85,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"roupa-vermelha.jpg",
+				"roupavermelha.jpg",
 				"Roupa Vermelha",
 				"Descrição",
 				"G",
@@ -97,7 +97,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"roupa-roxa.jpg",
+				"rouparoxa.jpg",
 				"Roupa Roxa",
 				"Descrição",
 				"P",
@@ -109,7 +109,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"roupa-marrom.jpg",
+				"roupamarrom.jpg",
 				"Roupa Marrom",
 				"Descrição",
 				"GG",
@@ -121,7 +121,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"roupa-branca.jpg",
+				"roupabranca.jpg",
 				"Roupa Branca",
 				"Descrição",
 				"PP",
@@ -133,7 +133,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"roupa-azul.jpg",
+				"roupaazul.jpg",
 				"Roupa Azul",
 				"Descrição",
 				"M",
@@ -145,7 +145,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"roupa-amarela.jpg",
+				"roupaamarela.jpg",
 				"Roupa Amarela",
 				"Descrição",
 				"G",
@@ -158,7 +158,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 
 
 		produto = new Produto(
-				"anel-rosa.jpg",
+				"anelrosa.jpg",
 				"Anel de Quartzo Rosa",
 				"Anel de ouro",
 				"19",
@@ -170,7 +170,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"anel-branco.jpg",
+				"anelbranco.jpg",
 				"Anel de Diamante",
 				"Anel de ouro",
 				"19",
@@ -182,7 +182,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"anel-azul.jpg",
+				"anelazul.jpg",
 				"Anel de Safira",
 				"Anel de prata",
 				"21",
@@ -194,7 +194,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"anel-laranja.jpg",
+				"anellaranja.jpg",
 				"Anel de Topázio",
 				"Anel de prata",
 				"17",
@@ -206,7 +206,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"anel-roxo.jpg",
+				"anelroxo.jpg",
 				"Anel de Quartzo Roxo",
 				"Anel de ouro",
 				"19",
@@ -218,7 +218,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"anel-verde.jpg",
+				"anelverde.jpg",
 				"Anel de Esmeralda",
 				"Anel de ouro",
 				"19",
@@ -230,7 +230,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"anel-vermelho.jpg",
+				"anelvermelho.jpg",
 				"Anel de Rubi",
 				"Anel de ouro",
 				"18",
@@ -242,7 +242,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"calca-amarela.jpg",
+				"calcaamarela.jpg",
 				"Calça Amarela",
 				"Descrição",
 				"M",
@@ -254,7 +254,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"calca-azul.jpg",
+				"calcaazul.jpg",
 				"Calça Azul",
 				"Descrição",
 				"M",
@@ -266,7 +266,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"calca-marrom.jpg",
+				"calcamarrom.jpg",
 				"Calça Marrom",
 				"Descrição",
 				"M",
@@ -278,7 +278,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"calca-verde.jpg",
+				"calcaverde.jpg",
 				"Calça Verde",
 				"Descrição",
 				"M",
@@ -290,7 +290,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"calca-vermelha.jpg",
+				"calcavermelha.jpg",
 				"Calça Vermelha",
 				"Descrição",
 				"P",
@@ -302,7 +302,7 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"calca-vinho.jpg",
+				"calcavinho.jpg",
 				"Calça Vinho",
 				"Descrição",
 				"M",
