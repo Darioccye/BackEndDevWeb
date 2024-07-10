@@ -14,13 +14,25 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
 
 @Service
 public class ProdutoService {
 
+    private HashMap<Long, HashMap<Long, Integer>> carrinho;
+
     @Autowired
     private ProdutoRepository produtoRepository;
+
+
+    @Autowired
+    private CarrinhoService carrinhoService;
+
+    @Autowired
+    public ProdutoService(HashMap<Long, HashMap<Long, Integer>> carrinho){
+        this.carrinho = carrinho;
+    }
 
     public List<Produto> recuperarProdutos() {
         return produtoRepository.recuperarProdutosComCategoria();
@@ -73,6 +85,9 @@ public class ProdutoService {
             .orElseThrow(() -> new EntidadeNaoEncontradaException(
                 "Produto número " + id + " não encontrado."));
         produtoRepository.delete(p);
+        for(int i=0; i < 100 ;i++){
+            carrinhoService.removerProduto(carrinho, (long) i, id);
+        }
         return p;
     }
 
