@@ -54,15 +54,6 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		usuarioRepository.save(usuario);
 		carrinho.put(usuario.getId(), new HashMap<>());
 
-		Categoria fruta = new Categoria("Frutas", "frutas");
-		categoriaRepository.save(fruta);
-
-		Categoria legume = new Categoria("Legumes", "legumes");
-		categoriaRepository.save(legume);
-
-		Categoria verdura = new Categoria("Verduras", "verduras");
-		categoriaRepository.save(verdura);
-
 		Categoria calca = new Categoria("Calças", "calcas");
 		categoriaRepository.save(calca);
 
