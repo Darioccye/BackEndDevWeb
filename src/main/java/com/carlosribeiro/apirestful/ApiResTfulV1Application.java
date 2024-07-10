@@ -73,365 +73,260 @@ public class ApiResTfulV1Application implements CommandLineRunner {
 		categoriaRepository.save(acessorio);
 
 		Produto produto = new Produto(
-				"abacate.png",
-				"Abacate",
-				"1 unidade aprox. 750g",
+				"roupa-verde.jpg",
+				"Roupa Verde",
+				"Descrição",
+				"M",
+				true,
+				7,
+				BigDecimal.valueOf(30.99),
+				LocalDate.of(2022, 3, 9),
+				roupa);
+		produtoRepository.save(produto);
+
+		produto = new Produto(
+				"roupa-vermelha.jpg",
+				"Roupa Vermelha",
+				"Descrição",
+				"G",
+				true,
+				7,
+				BigDecimal.valueOf(38.99),
+				LocalDate.of(2022, 3, 9),
+				roupa);
+		produtoRepository.save(produto);
+
+		produto = new Produto(
+				"roupa-roxa.jpg",
+				"Roupa Roxa",
+				"Descrição",
 				"P",
 				true,
-				100,
-				BigDecimal.valueOf(2.45),
-				LocalDate.of(2023, 4, 26),
-				fruta);
+				7,
+				BigDecimal.valueOf(25.99),
+				LocalDate.of(2021, 3, 23),
+				roupa);
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
+				"roupa-marrom.jpg",
+				"Roupa Marrom",
+				"Descrição",
+				"GG",
+				true,
+				7,
+				BigDecimal.valueOf(22.99),
+				LocalDate.of(2024, 11, 9),
+				roupa);
+		produtoRepository.save(produto);
+
+		produto = new Produto(
+				"roupa-branca.jpg",
+				"Roupa Branca",
+				"Descrição",
+				"PP",
+				true,
+				7,
+				BigDecimal.valueOf(40.99),
+				LocalDate.of(2023, 8, 9),
+				roupa);
+		produtoRepository.save(produto);
+
+		produto = new Produto(
+				"roupa-azul.jpg",
+				"Roupa Azul",
+				"Descrição",
 				"M",
-				false,
-				50,
-				BigDecimal.valueOf(1.1),
-				LocalDate.of(2023, 5, 22),
+				true,
+				7,
+				BigDecimal.valueOf(50.99),
+				LocalDate.of(2022, 6, 9),
+				roupa);
+		produtoRepository.save(produto);
+
+		produto = new Produto(
+				"roupa-amarela.jpg",
+				"Roupa Amarela",
+				"Descrição",
+				"G",
+				true,
+				7,
+				BigDecimal.valueOf(47.99),
+				LocalDate.of(2022, 5, 9),
+				roupa);
+		produtoRepository.save(produto);
+
+
+		produto = new Produto(
+				"anel-rosa.jpg",
+				"Anel de Quartzo Rosa",
+				"Anel de ouro",
+				"19",
+				true,
+				5,
+				BigDecimal.valueOf(300.99),
+				LocalDate.of(2024, 6, 11),
 				acessorio);
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"roupa.jpg",
-				"acessorio",
-				"1 unidade aprox. 250g",
+				"anel-branco.jpg",
+				"Anel de Diamante",
+				"Anel de ouro",
+				"19",
+				true,
+				15,
+				BigDecimal.valueOf(499.99),
+				LocalDate.of(2024, 6, 11),
+				acessorio);
+		produtoRepository.save(produto);
+
+		produto = new Produto(
+				"anel-azul.jpg",
+				"Anel de Safira",
+				"Anel de prata",
+				"21",
+				true,
+				15,
+				BigDecimal.valueOf(349.99),
+				LocalDate.of(2022, 6, 11),
+				acessorio);
+		produtoRepository.save(produto);
+
+		produto = new Produto(
+				"anel-laranja.jpg",
+				"Anel de Topázio",
+				"Anel de prata",
+				"17",
+				true,
+				4,
+				BigDecimal.valueOf(279.99),
+				LocalDate.of(2023, 6, 11),
+				acessorio);
+		produtoRepository.save(produto);
+
+		produto = new Produto(
+				"anel-roxo.jpg",
+				"Anel de Quartzo Roxo",
+				"Anel de ouro",
+				"19",
+				true,
+				5,
+				BigDecimal.valueOf(349.99),
+				LocalDate.of(2024, 6, 11),
+				acessorio);
+		produtoRepository.save(produto);
+
+		produto = new Produto(
+				"anel-verde.jpg",
+				"Anel de Esmeralda",
+				"Anel de ouro",
+				"19",
+				true,
+				4,
+				BigDecimal.valueOf(379.99),
+				LocalDate.of(2024, 6, 11),
+				acessorio);
+		produtoRepository.save(produto);
+
+		produto = new Produto(
+				"anel-vermelho.jpg",
+				"Anel de Rubi",
+				"Anel de ouro",
+				"18",
+				true,
+				3,
+				BigDecimal.valueOf(369.99),
+				LocalDate.of(2024, 6, 11),
+				acessorio);
+		produtoRepository.save(produto);
+
+		produto = new Produto(
+				"calca-amarela.jpg",
+				"Calça Amarela",
+				"Descrição",
 				"M",
-				false,
-				50,
-				BigDecimal.valueOf(3),
+				true,
+				12,
+				BigDecimal.valueOf(55.99),
 				LocalDate.of(2023, 5, 22),
 				calca);
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
+				"calca-azul.jpg",
+				"Calça Azul",
+				"Descrição",
 				"M",
-				false,
-				50,
-				BigDecimal.valueOf(15),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(5),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(22),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(25),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(33),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(1.1),
-				LocalDate.of(2023, 5, 22),
-				acessorio);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"acessorio",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(3),
+				true,
+				12,
+				BigDecimal.valueOf(35.99),
 				LocalDate.of(2023, 5, 22),
 				calca);
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
+				"calca-marrom.jpg",
+				"Calça Marrom",
+				"Descrição",
 				"M",
-				false,
-				50,
-				BigDecimal.valueOf(15),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(5),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(22),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(25),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(33),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(1.1),
-				LocalDate.of(2023, 5, 22),
-				acessorio);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"acessorio",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(3),
+				true,
+				12,
+				BigDecimal.valueOf(55.99),
 				LocalDate.of(2023, 5, 22),
 				calca);
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
+				"calca-verde.jpg",
+				"Calça Verde",
+				"Descrição",
 				"M",
-				false,
-				50,
-				BigDecimal.valueOf(15),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(5),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(22),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(25),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(33),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
-
-
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(1.1),
-				LocalDate.of(2023, 5, 22),
-				acessorio);
-		produtoRepository.save(produto);
-
-		produto = new Produto(
-				"roupa.jpg",
-				"acessorio",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(3),
+				true,
+				12,
+				BigDecimal.valueOf(59.99),
 				LocalDate.of(2023, 5, 22),
 				calca);
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(15),
-				LocalDate.of(2023, 5, 22),
-				legume);
+				"calca-vermelha.jpg",
+				"Calça Vermelha",
+				"Descrição",
+				"P",
+				true,
+				12,
+				BigDecimal.valueOf(34.99),
+				LocalDate.of(2023, 2, 13),
+				calca);
 		produtoRepository.save(produto);
 
 		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
+				"calca-vinho.jpg",
+				"Calça Vinho",
+				"Descrição",
 				"M",
-				false,
-				50,
-				BigDecimal.valueOf(5),
-				LocalDate.of(2023, 5, 22),
-				legume);
+				true,
+				12,
+				BigDecimal.valueOf(80.99),
+				LocalDate.of(2024, 5, 22),
+				calca);
 		produtoRepository.save(produto);
 
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(22),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
 
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(25),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
 
-		produto = new Produto(
-				"roupa.jpg",
-				"roupa",
-				"1 unidade aprox. 250g",
-				"M",
-				false,
-				50,
-				BigDecimal.valueOf(33),
-				LocalDate.of(2023, 5, 22),
-				legume);
-		produtoRepository.save(produto);
+		carrinho.get((long)1).put((long) 1, 1);
 
-		carrinho.get((long)1).put((long) 1, 10);
+		carrinho.get((long)1).put((long) 10, 1);
 
-		carrinho.get((long)2).put((long) 5, 10);
 
-		System.out.println(carrinho);
+		carrinhoService.adicionarProduto(carrinho, (long) 1, (long) 17);
 
-		carrinhoService.adicionarProduto(carrinho, (long) 1, (long) 4);
-
-		System.out.println(carrinho);
-
-		System.out.println(carrinhoService.calcularTotal(carrinho, (long) 1));
+//		System.out.println(carrinho);
+//
+//		System.out.println(carrinho);
+//
+//		System.out.println(carrinhoService.calcularTotal(carrinho, (long) 1));
 
 	}
 
